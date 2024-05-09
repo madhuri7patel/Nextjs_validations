@@ -39,10 +39,10 @@ export default function UserForm() {
   return (
     <div className="w-[500px] shadow bg-[#282828] rounded-lg p-5">
       <form onSubmit={handleSubmit(onSubmit)}>
-        <h1 className="text-xl font-bold">Form Validation</h1>
-        <h1>Handle Validation like a pro</h1>
+        <h1 className="text-xl font-bold text-[white]">validation</h1>
+        <h1 className="text-[white]">Handle Validation like a pro</h1>
         <div className="mt-5">
-          <label>Name</label>
+          <label className="text-[white]">Name</label>
           <input
             type="text"
             placeholder="Enter your name"
@@ -52,7 +52,7 @@ export default function UserForm() {
           <span className="text-red-500 font-bold">{errors.name?.message}</span>
         </div>
         <div className="mt-5">
-          <label>Email</label>
+          <label className="text-[white]">Email</label>
           <input
             type="email"
             placeholder="Enter your email"
@@ -64,7 +64,7 @@ export default function UserForm() {
           </span>
         </div>
         <div className="mt-5">
-          <label>Password</label>
+          <label className="text-[white]">Password</label>
           <input
             type="password"
             placeholder="Enter your password"
@@ -88,7 +88,7 @@ export default function UserForm() {
           </span>
         </div>
         <div className="mt-5">
-          <label>Select Hobbies</label>
+          <label className="text-[white]">Select Hobbies</label>
           <div className="grid grid-cols-3 mt-2">
             {hobbies.map((item) => (
               <div className="flex items-center" key={item.key}>
@@ -117,7 +117,7 @@ export default function UserForm() {
           </span>
         </div>
         <div className="mt-5">
-          <label>Profile Image</label>
+          <label className="text-[white]">Profile Image</label>
           <input type="file" onChange={handleImage} className={inputClass} />
           <span className="text-red-500 font-bold">
             {errors.profile?.message}
